@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="view" hgap="5.0" prefHeight="582.0" prefWidth="709.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="86.0" minHeight="10.0" prefHeight="68.0" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="67.0" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="79.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <children>
+      <Label text="Alberto Barroso Carrillo 2º DAM B" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+      <Label text="Ruta actual:" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <TextField fx:id="textRuta" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+      <Button fx:id="btnObtener" mnemonicParsing="false" onAction="#onObtenerAction" text="Comprobar" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <Button fx:id="btnCrear" mnemonicParsing="false" onAction="#onCrearAction" prefHeight="25.0" prefWidth="104.0" text="Crear (Fichero)" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+      <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#onEliminarAction" prefHeight="25.0" prefWidth="101.0" text="Eliminar" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Button fx:id="btnMover" mnemonicParsing="false" onAction="#onMoverAction" prefHeight="25.0" prefWidth="96.0" text="Mover" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <TextArea fx:id="textListado" prefHeight="85.0" prefWidth="571.0" promptText="Listado de ficheros y carpeta de la carpeta actual" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="3" GridPane.rowSpan="2" />
+      <TextArea fx:id="textContenido" prefHeight="112.0" prefWidth="276.0" promptText="Contenido del fichero" GridPane.columnIndex="2" GridPane.columnSpan="2147483647" GridPane.rowIndex="5" GridPane.rowSpan="2147483647" />
+      <Button fx:id="btnVer" mnemonicParsing="false" onAction="#onVerAction" text="Ver contenido fichero" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+      <Button fx:id="btnModificar" mnemonicParsing="false" onAction="#onModificarAction" prefHeight="25.0" prefWidth="132.0" text="Modificar fichero" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+      <Button mnemonicParsing="false" onAction="#onCrearCarpetAction" text="Crear (Carpeta)" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>
