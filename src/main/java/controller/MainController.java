@@ -14,6 +14,7 @@ public class MainController implements Initializable{
 	
 	JavaController javaController = new JavaController();
 	XMLController xmlController = new XMLController();
+	RandomController randomController = new RandomController();
 	
 	@FXML
     private AnchorPane view;
@@ -43,6 +44,7 @@ public class MainController implements Initializable{
 		// TODO Auto-generated method stub
 		this.tabJava.setContent(javaController.getView());
 		this.tabXML.setContent(xmlController.getView());
+		this.tabRAF.setContent(randomController.getView());
 	}
 
 }

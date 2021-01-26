@@ -24,7 +24,7 @@
       <Futbolista fechaInicio="2016-03-01" fechaFin="2016-03-08">Raquel Mateo Umpierrez</Futbolista>
     </Contratos>
   </Equipo>
-  <Equipo nomEquipo="Gran Canaria" copasGanadas="3">
+  <Equipo nomEquipo="Gran Canaria" copasGanadas="Gran Canaria">
     <codLiga>SDN</codLiga>
     <Contratos>
       <Futbolista fechaInicio="2017-05-01" fechaFin="2018-09-01">Maria Rodriguez Marquez</Futbolista>
@@ -32,6 +32,7 @@
       <Futbolista fechaInicio="2017-06-01" fechaFin="2017-08-08">Carlos Perez Lopez</Futbolista>
       <Futbolista fechaInicio="2016-03-01" fechaFin="2016-03-08">Jose Maria Martinez Bacallado</Futbolista>
       <Futbolista fechaInicio="2010-01-01" fechaFin="2028-09-12">PepitoPerez</Futbolista>
+      <Futbolista fechaInicio="2020-20-20" fechaFin="2020-20-20">ElPepe</Futbolista>
     </Contratos>
   </Equipo>
 </Equipos>

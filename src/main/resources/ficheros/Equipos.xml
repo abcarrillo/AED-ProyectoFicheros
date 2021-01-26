@@ -24,7 +24,7 @@
       <Futbolista fechaInicio="2016-03-01" fechaFin="2016-03-08">Raquel Mateo Umpierrez</Futbolista>
     </Contratos>
   </Equipo>
-  <Equipo nomEquipo="Gran Canaria" copasGanadas="3">
+  <Equipo nomEquipo="Gran Canaria" copasGanadas="231">
     <codLiga>SDN</codLiga>
     <Contratos>
       <Futbolista fechaInicio="2017-05-01" fechaFin="2018-09-01">Maria Rodriguez Marquez</Futbolista>

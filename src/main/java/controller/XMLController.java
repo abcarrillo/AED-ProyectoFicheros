@@ -87,6 +87,30 @@ public class XMLController implements Initializable{
     	}
     	
     }
+    
+    @FXML
+    void onModificarCopasAction(ActionEvent event) {
+    	TextInputDialog dialog = new TextInputDialog("");
+    	dialog.setTitle("Modificar copas de un equipo");
+    	dialog.setHeaderText("Por favor, inserte el nombre exacto del equipo que quiere modificar sus copas.");
+    	dialog.setContentText("Nombre del equipo: ");
+    	Optional<String> result = dialog.showAndWait();
+    	
+    	if (result.isPresent()){
+    		if(!txtRuta.getText().isEmpty() ) {
+    			TextInputDialog dialog2 = new TextInputDialog("");
+    	    	dialog2.setTitle("Modificar copas de un equipo");
+    	    	dialog2.setHeaderText("Por favor, inserte el nuevo numero de copas");
+    	    	dialog2.setContentText("Copas nuevas: ");
+    	    	
+    	    	Optional<String> result2 = dialog2.showAndWait();
+    	    	if (result2.isPresent()){
+    	    		XML.cambiarCopasGanadas(txtRuta.getText(), result.get(), result2.get());
+    	    	}
+        	}
+    	}
+    	
+    }
 
     @FXML
     void onVerContenidoAction(ActionEvent event) {
